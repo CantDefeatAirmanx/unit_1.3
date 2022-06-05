@@ -1,0 +1,30 @@
+.side-bar {
+}
+
+
+.page-content {
+}
+
+
+.page-content__main-header {
+
+
+}
+
+
+.main-header {
+
+
+}
+.ui-menu {
+   list-style-type: none;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+}
+.ui-menu_element {
+
+}
