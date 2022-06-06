@@ -1,43 +1,107 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
    <head>
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>CPS сервис</title>
-      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="styles.css" />
    </head>
    <body>
       <div class="side-bar"></div>
       <div class="page-content">
          <header class="page-content__main-header main-header">
-            <menu class="ui-menu">
-               <li class="ui-menu_element">
-                  <a href="#"
-                     ><img src="images/icons/burger.svg" alt="hamburger-icon"
-                  /></a>
-               </li>
-               <li class="ui-menu_element">
-                  <a href="#"
-                     ><img src="images/Group.svg" alt="store-logo"
-                  /></a>
-               </li>
-               <li class="ui-menu_element">
-                  <a href="#"
-                     ><img src="images/icons/divider.svg"
-                  /></a>
-               </li>
-               <li class="ui-menu_element">
-                  <a href="#"
-                     ><img src="images/icons/repair.svg" alt="repair-btn"
-                  /></a>
-               </li>
-               <li class="ui-menu_element">
-                  <a href="#"
-                     ><img src="images/icons/checkstatus.svg" alt="search-btn"
-                  /></a>
-               </li>
+            <menu class="main-header__ui-menu ui-menu">
+               <div class="ui-menu__first-group">
+                  <li class="ui-menu__element">
+                     <a href="#"
+                        ><img
+                           src="images/icons/burger.svg"
+                           alt="hamburger-icon"
+                     /></a>
+                  </li>
+                  <li class="ui-menu__element ui-menu__element--hidden">
+                     <a href="#"
+                        ><img src="images/icons/divider.svg" alt=""
+                     /></a>
+                  </li>
+                  <li class="ui-menu__element">
+                     <a href="#"
+                        ><img src="images/Group.svg" alt="store-logo"
+                     /></a>
+                  </li>
+               </div>
+
+               <div class="ui-menu__second-group">
+                  <li class="ui-menu__element ui-menu__element--hidden">
+                     <a href="#"
+                        ><img src="images/icons/call.svg" alt="call-btn"
+                     /></a>
+                  </li>
+
+                  <li class="ui-menu__element ui-menu__element--hidden">
+                     <a href="#"
+                        ><img src="images/icons/chat.svg" alt="chat-btn"
+                     /></a>
+                  </li>
+
+                  <li class="ui-menu__element ui-menu__element--hidden">
+                     <a href="#"
+                        ><img src="images/icons/profile.svg" alt="profile-btn"
+                     /></a>
+                  </li>
+
+                  <li class="ui-menu__element ui-menu__element--hidden768">
+                     <a href="#"><img src="images/icons/divider.svg" /></a>
+                  </li>
+                  <li class="ui-menu__element">
+                     <a href="#"
+                        ><img src="images/icons/repair.svg" alt="repair-btn"
+                     /></a>
+                  </li>
+                  <li class="ui-menu__element">
+                     <a href="#"
+                        ><img
+                           src="images/icons/checkstatus.svg"
+                           alt="search-btn"
+                     /></a>
+                  </li>
+               </div>
             </menu>
+
+            <section class="page-info">
+               <div class="page-info__header">
+                  <img
+                     src="images/icons/highlight.svg"
+                     alt=""
+                     class="page-info__highlight-img"
+                  />
+                  <h1 class="page-info__headline">Услуги и сервисы</h1>
+               </div>
+
+               <nav class="page-info__nav-bar">
+                  <ul class="page-info__nav-ul">
+                     <li class="page-info__ul-item">
+                        <a href="#" alt="">Ремонтируемые бренды</a>
+                     </li>
+                     <li class="page-info__ul-item">
+                        <a href="#" alt="">Ремонтируемые устройства</a>
+                     </li>
+                     <li class="page-info__ul-item">
+                        <a href="#" alt="">Цены на услуги</a>
+                     </li>
+                     <li class="page-info__ul-item">
+                        <a href="#" alt="">Адреса сервисных центров</a>
+                     </li>
+                     <li class="page-info__ul-item">
+                        <a href="#" alt="">Специальные цены</a>
+                     </li>
+                     <li class="page-info__ul-item">
+                        <a href="#" alt="">Отзывы</a>
+                     </li>
+                  </ul>
+               </nav>
+            </section>
          </header>
          <main></main>
          <footer></footer>
