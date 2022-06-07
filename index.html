@@ -11,8 +11,8 @@
    <body>
       <div class="side-bar"></div>
       <div class="page-content">
-         <header class="page-content__main-header main-header">
-            <menu class="main-header__ui-menu ui-menu">
+         <header class="main-header">
+            <menu class="ui-menu">
                <div class="ui-menu__first-group">
                   <li class="ui-menu__element">
                      <a href="#"
@@ -52,7 +52,7 @@
                      /></a>
                   </li>
 
-                  <li class="ui-menu__element ui-menu__element--hidden768">
+                  <li class="ui-menu__element">
                      <a href="#"><img src="images/icons/divider.svg" /></a>
                   </li>
                   <li class="ui-menu__element">
@@ -84,53 +84,85 @@
                   <div
                      class="high-res-header__element high-res-header__element--hidden"
                   >
-                     <menu>
+                     <menu class="high-res-header__menu">
                         <li>
-                           <a href="#"
-                              ><span>Оставить заявку</span>
+                           <button
+                              class="high-res-header__btn high-res-header__btn--order"
+                              type="button"
+                           >
+                              <span class="high-res-header__btn-desc"
+                                 >Оставить заявку</span
+                              >
                               <img
                                  src="images/icons/repair.svg"
-                                 alt="repair-btn"
-                           /></a>
+                                 alt="place repair order button"
+                              />
+                           </button>
                         </li>
                         <li>
-                           <a href="#"
-                              ><span>Статус ремонта</span>
-                              <img src="images/icons/checkstatus.svg" alt=""
-                           /></a>
+                           <button
+                              class="high-res-header__btn high-res-header__btn--order"
+                              type="button"
+                           >
+                              <span class="high-res-header__btn-desc"
+                                 >Статус ремонта</span
+                              >
+                              <img
+                                 src="images/icons/checkstatus.svg"
+                                 alt="check repair status button"
+                              />
+                           </button>
                         </li>
                      </menu>
                   </div>
                </div>
 
-               <nav class="page-info__nav-bar">
-                  <ul class="page-info__nav-ul">
+               <nav class="page-info__nav-bar nav-bar">
+                  <ul class="page-info__nav-ul nav-bar__list">
                      <li
-                        class="page-info__ul-item page-info__ul-item--hidden page-info__ul-item--1120-active"
+                        class="page-info__ul-item 
+                        page-info__ul-item--hidden 
+                        page-info__ul-item--1120-active 
+                        nav-bar__list-element 
+                        nav-bar__list-element--hidden
+                        nav-bar__list-element--1120-active"
                      >
-                        <a href="#" alt="">Ремонтируемые бренды</a>
+                        <a href="#" alt="brands we repair">Ремонтируемые бренды</a>
                      </li>
-                     <li class="page-info__ul-item page-info__ul-item--active">
-                        <a href="#" alt="">Ремонтируемые устройства</a>
+                     <li
+                        class="page-info__ul-item 
+                        page-info__ul-item--active 
+                        nav-bar__list-element
+                        nav-bar__list-element--active"
+                     >
+                        <a href="#" alt="devices we repair">Ремонтируемые устройства</a>
                      </li>
 
                      <li
-                        class="page-info__ul-item page-info__ul-item--1120-hidden"
+                        class="page-info__ul-item 
+                        page-info__ul-item--1120-hidden
+                        nav-bar__list-element
+                        nav-bar__list-element--1120-hidden"
                      >
-                        <a href="#" alt="">Дополнительные услуги</a>
+                        <a href="#" alt="additional services">Дополнительные услуги</a>
                      </li>
 
-                     <li class="page-info__ul-item">
-                        <a href="#" alt="">Цены на услуги</a>
+                     <li class="page-info__ul-item nav-bar__list-element">
+                        <a href="#" alt="prices">Цены на услуги</a>
                      </li>
-                     <li class="page-info__ul-item page-info__ul-item--hidden">
-                        <a href="#" alt="">Адреса сервисных центров</a>
+                     <li
+                        class="page-info__ul-item 
+                        page-info__ul-item--hidden 
+                        nav-bar__list-element
+                        nav-bar__list-element--hidden"
+                     >
+                        <a href="#" alt="center addresses">Адреса сервисных центров</a>
                      </li>
-                     <li class="page-info__ul-item">
-                        <a href="#" alt="">Специальные цены</a>
+                     <li class="page-info__ul-item nav-bar__list-element">
+                        <a href="#" alt="special price offers">Специальные цены</a>
                      </li>
-                     <li class="page-info__ul-item">
-                        <a href="#" alt="">Отзывы</a>
+                     <li class="page-info__ul-item nav-bar__list-element">
+                        <a href="#" alt="reviews">Отзывы</a>
                      </li>
                   </ul>
                </nav>
@@ -154,7 +186,7 @@
                      </p>
                      <div class="description__text description__text--flex">
                         <img src="images/icons/icon.svg" alt="" />
-                        <p><a href="" class="link">Читать далее</a></p>
+                        <a href="" class="link">Читать далее</a>
                      </div>
                   </div>
                   <div class="description__element description__img">
