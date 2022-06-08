@@ -13,6 +13,11 @@ body {
    color: inherit;
 }
 
+button {
+   all: inherit;
+   cursor: pointer;
+}
+
 /* Page-header */
 
 /* UI-menu */
