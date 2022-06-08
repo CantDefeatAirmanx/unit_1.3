@@ -42,8 +42,16 @@ body {
    align-items: center;
 }
 
+.ui-menu__element {
+   transition: 0.3s ease;
+}
+
 .ui-menu__element--hidden {
    display: none;
+}
+
+.ui-menu__element:hover:not(.ui-menu__element--passive) {
+   transform: scale(1.2);
 }
 
 /* Info-section */
