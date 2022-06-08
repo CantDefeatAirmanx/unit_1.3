@@ -14,8 +14,8 @@ body {
 }
 
 button {
-   all: inherit;
-   cursor: pointer;
+   background-color: inherit;
+   border: none;
 }
 
 /* Page-header */
@@ -33,6 +33,15 @@ button {
    border-bottom: 1px solid #d9fff5;
 }
 
+.ui-menu__element {
+   transition: 0.3s ease;
+}
+
+.ui-menu__element:hover:not(.ui-menu__element--passive) {
+   transform: scale(1.2);
+}
+
+
 .ui-menu__first-group {
    flex-grow: 1;
    display: flex;
@@ -47,16 +56,8 @@ button {
    align-items: center;
 }
 
-.ui-menu__element {
-   transition: 0.3s ease;
-}
-
 .ui-menu__element--hidden {
    display: none;
-}
-
-.ui-menu__element:hover:not(.ui-menu__element--passive) {
-   transform: scale(1.2);
 }
 
 /* Info-section */
