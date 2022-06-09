@@ -11,58 +11,70 @@
    <body>
       <div class="page-content">
          <header class="main-header">
-            <menu class="ui-menu">
-               <div class="ui-menu__first-group">
-                  <li class="ui-menu__element">
-                     <button type="button" class="ui-menu__button"
-                        ><img
-                           src="images/icons/burger.svg"
-                           alt="hamburger-icon"
-                     /></button>
-                  </li>
-                  <li class="ui-menu__element ui-menu__element--hidden ui-menu__element--passive">
-                     <img src="images/icons/divider.svg" alt="" />
-                  </li>
-                  <li class="ui-menu__element ui-menu__element--passive">
-                     <img src="images/Group.svg" alt="" />
-                  </li>
-               </div>
+            <menu class="mobile-menu">
+               <li class="mobile-menu__element">
+                  <button
+                     type="button"
+                     class="mobile-menu__button hamburger-btn"
+                     aria-label="hamburger button"
+                  >
+                     <div class="hamburger-btn__container"></div>
+                  </button>
+               </li>
 
-               <div class="ui-menu__second-group">
-                  <li class="ui-menu__element ui-menu__element--hidden">
-                     <button type="button" class="ui-menu__button"
-                        ><img src="images/icons/call.svg" alt="call-btn"
-                     /></button>
-                  </li>
+               <div
+                  class="mobile-menu__element mobile-menu__divider mobile-menu__element--hidden"
+               ></div>
 
-                  <li class="ui-menu__element ui-menu__element--hidden">
-                     <button type="button" class="ui-menu__button"
-                        ><img src="images/icons/chat.svg" alt="chat-btn"
-                     /></button>
-                  </li>
+               <li
+                  class="mobile-menu__element mobile-menu__element--passive mobile-menu__company-logo"
+               >
+                  <div class="company-logo">
+                     <img src="images/Group.svg" alt="company logo" />
+                  </div>
+               </li>
 
-                  <li class="ui-menu__element ui-menu__element--hidden">
-                     <button type="button" class="ui-menu__button"
-                        ><img src="images/icons/profile.svg" alt="profile-btn"
-                     /></button>
-                  </li>
+               <div
+                  class="mobile-menu__element mobile-menu__divider mobile-menu__element--hidden768"
+               ></div>
 
-                  <li class="ui-menu__element ui-menu__element--passive">
-                     <img src="images/icons/divider.svg" />
-                  </li>
-                  <li class="ui-menu__element">
-                     <button type="button" class="ui-menu__button"
-                        ><img src="images/icons/repair.svg" alt="repair-btn"
-                     /></button>
-                  </li>
-                  <li class="ui-menu__element">
-                     <button type="button" class="ui-menu__button"
-                        ><img
-                           src="images/icons/checkstatus.svg"
-                           alt="search-btn"
-                     /></button>
-                  </li>
-               </div>
+               <li class="mobile-menu__element mobile-menu__element--hidden">
+                  <button type="button" class="mobile-menu__button call-btn" aria-label="call button">
+                     <div class="call-btn__container"></div>
+                  </button>
+               </li>
+
+               <li class="mobile-menu__element mobile-menu__element--hidden">
+                  <button type="button" class="mobile-menu__button chat-btn" aria-label="chat button">
+                     <div class="chat-btn__container"></div>
+                  </button>
+               </li>
+
+               <li class="mobile-menu__element mobile-menu__element--hidden">
+                  <button type="button" class="mobile-menu__button profile-btn" aria-label="profile page button">
+                     <div class="profile-btn__container"></div>
+                  </button>
+               </li>
+
+               <div
+                  class="mobile-menu__element mobile-menu__divider mobile-menu__element--hidden"
+               ></div>
+
+               <li class="mobile-menu__element">
+                  <button
+                     type="button"
+                     class="mobile-menu__button repair-order-btn"
+                     aria-label="repair order button"
+                  >
+                     <div class="repair-order-btn__container"></div>
+                  </button>
+               </li>
+
+               <li class="mobile-menu__element">
+                  <button type="button" class="mobile-menu__button check-status-btn" aria-label="check status button">
+                     <div class="check-status-btn__container"></div>
+                  </button>
+               </li>
             </menu>
 
             <section class="page-info">
@@ -189,9 +201,7 @@
                </div>
             </section>
          </header>
-         <main>
-            
-         </main>
+         <main></main>
       </div>
    </body>
 </html>
