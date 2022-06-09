@@ -18,6 +18,12 @@ button {
    border: none;
 }
 
+.page-content {
+   max-width: 1120px;
+   margin: 0 0 0 auto;
+}
+
+
 /* Page-header */
 
 /* UI-menu */
@@ -99,6 +105,7 @@ button {
    text-align: left;
    margin: 3px;
    margin-left: 0;
+   border: 2px solid transparent;
 }
 
 .nav-bar__list-element--active {
@@ -173,7 +180,7 @@ button {
    }
 }
 
-@media (min-width: 768px) and (max-width: 1119.98px) {
+@media (min-width: 768px) {
    /* UI-menu */
 
    .ui-menu {
@@ -258,7 +265,7 @@ button {
    }
 
    .nav-bar__list-element--active {
-      border: unset;
+      border: 2px solid transparent;
    }
 
    .nav-bar__list-element:hover {
