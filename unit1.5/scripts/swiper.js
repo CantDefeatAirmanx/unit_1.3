@@ -1,26 +1,24 @@
-{
-   let isMobileDevice = window.matchMedia(
-      "(max-width: 767.9px) and (min-resolution: 150dpi)"
-   ).matches;
+let isMobileDevice = window.matchMedia(
+   "(max-width: 767.9px) and (min-resolution: 150dpi)"
+).matches;
 
-   let isIphone = window.matchMedia(
-      "(max-width: 767.9px) and (-webkit-min-device-pixel-ration: 2), (max-width: 767.9px) and (min-device-pixel-ration: 2)"
-   ).matches;
+let isIphone = window.matchMedia(
+   "(max-width: 767.9px) and (orientation: portrait)"
+).matches;
 
-   if (isMobileDevice || isIphone) {
-      new Swiper(".repair-brands__swiper-container", {
-         pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-         },
+if (isMobileDevice || isIphone) {
+   new Swiper(".repair-brands__swiper-container", {
+      pagination: {
+         el: ".swiper-pagination",
+         clickable: true,
+      },
 
-         slideToClickedSlide: true,
+      slideToClickedSlide: true,
 
-         autoWidth: true,
+      autoWidth: true,
 
-         slidesPerView: "auto",
-      });
-   }
+      slidesPerView: "auto",
+   });
 }
 
 // "(max-width: 767.9px) and (min-resolution: 190dpi)"
