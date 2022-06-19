@@ -21,127 +21,141 @@
          <!-- Slider main container -->
          <div class="repair-brands__swiper-container swiper">
             <!-- Additional required wrapper -->
-            <ul class="repair-brands__list swiper-wrapper">
+            <ul class="repair-brands__list repair-brands__list--closed swiper-wrapper">
                <!-- Slides -->
                <li class="repair-brands__list-item swiper-slide">
-
-                  <div><img src="../images/logos/lenovo.svg" alt="lenovo logo"></div>
-
-                  <button type="button" class="go-button button">
-                     <div class="go-button__img-container"></div>
-                  </button>
-
-               </li>
-               
-               <li class="repair-brands__list-item swiper-slide">
-
-                  <div><img src="../images/logos/samsung.svg" alt="lenovo logo"></div>
+                  <div>
+                     <img src="../images/logos/lenovo.svg" alt="lenovo logo" />
+                  </div>
 
                   <button type="button" class="go-button button">
                      <div class="go-button__img-container"></div>
                   </button>
-
                </li>
 
                <li class="repair-brands__list-item swiper-slide">
-
-                  <div><img src="../images/logos/apple.svg" alt="lenovo logo"></div>
+                  <div>
+                     <img src="../images/logos/samsung.svg" alt="lenovo logo" />
+                  </div>
 
                   <button type="button" class="go-button button">
                      <div class="go-button__img-container"></div>
                   </button>
-
                </li>
 
                <li class="repair-brands__list-item swiper-slide">
-
-                  <div><img src="../images/logos/view-sonic.svg" alt="lenovo logo"></div>
+                  <div>
+                     <img src="../images/logos/apple.svg" alt="lenovo logo" />
+                  </div>
 
                   <button type="button" class="go-button button">
                      <div class="go-button__img-container"></div>
                   </button>
-
                </li>
 
                <li class="repair-brands__list-item swiper-slide">
-
-                  <div><img src="../images/logos/bosch.svg" alt="lenovo logo"></div>
+                  <div>
+                     <img
+                        src="../images/logos/view-sonic.svg"
+                        alt="lenovo logo"
+                     />
+                  </div>
 
                   <button type="button" class="go-button button">
                      <div class="go-button__img-container"></div>
                   </button>
-
                </li>
 
                <li class="repair-brands__list-item swiper-slide">
-
-                  <div><img src="../images/logos/hp.svg" alt="lenovo logo"></div>
+                  <div>
+                     <img src="../images/logos/bosch.svg" alt="lenovo logo" />
+                  </div>
 
                   <button type="button" class="go-button button">
                      <div class="go-button__img-container"></div>
                   </button>
-
                </li>
 
                <li class="repair-brands__list-item swiper-slide">
-
-                  <div><img src="../images/logos/acer.svg" alt="lenovo logo"></div>
+                  <div>
+                     <img src="../images/logos/hp.svg" alt="lenovo logo" />
+                  </div>
 
                   <button type="button" class="go-button button">
                      <div class="go-button__img-container"></div>
                   </button>
-
                </li>
 
                <li class="repair-brands__list-item swiper-slide">
-
-                  <div><img src="../images/logos/sony.svg" alt="lenovo logo"></div>
+                  <div>
+                     <img src="../images/logos/acer.svg" alt="lenovo logo" />
+                  </div>
 
                   <button type="button" class="go-button button">
                      <div class="go-button__img-container"></div>
                   </button>
-
                </li>
 
                <li class="repair-brands__list-item swiper-slide">
-
-                  <div><img src="../images/logos/acer.svg" alt="lenovo logo"></div>
-
-                  <button type="button" class="go-button button">
-                     <div class="go-button__img-container"></div>
-                  </button>
-
-               </li>
-
-               <li class="repair-brands__list-item repair-brands__list-item--hidden swiper-slide">
-
-                  <div><img src="../images/logos/samsung.svg" alt="lenovo logo"></div>
+                  <div>
+                     <img src="../images/logos/sony.svg" alt="lenovo logo" />
+                  </div>
 
                   <button type="button" class="go-button button">
                      <div class="go-button__img-container"></div>
                   </button>
-
                </li>
 
-               <li class="repair-brands__list-item repair-brands__list-item--hidden swiper-slide">
-
-                  <div><img src="../images/logos/apple.svg" alt="lenovo logo"></div>
+               <li class="repair-brands__list-item swiper-slide">
+                  <div>
+                     <img src="../images/logos/acer.svg" alt="lenovo logo" />
+                  </div>
 
                   <button type="button" class="go-button button">
                      <div class="go-button__img-container"></div>
                   </button>
-
                </li>
-               
+
+               <li
+                  class="repair-brands__list-item repair-brands__list-item--hidden swiper-slide"
+               >
+                  <div>
+                     <img src="../images/logos/samsung.svg" alt="lenovo logo" />
+                  </div>
+
+                  <button type="button" class="go-button button">
+                     <div class="go-button__img-container"></div>
+                  </button>
+               </li>
+
+               <li
+                  class="repair-brands__list-item repair-brands__list-item--hidden swiper-slide"
+               >
+                  <div>
+                     <img src="../images/logos/apple.svg" alt="lenovo logo" />
+                  </div>
+
+                  <button type="button" class="go-button button">
+                     <div class="go-button__img-container"></div>
+                  </button>
+               </li>
             </ul>
 
-         
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
          </div>
+         <button
+            type="button"
+            class="repair-brands__showbtn repair-brands__showbtn--hidden button"
+            aria-label="Показать все бренды"
+         >
+            <span class="repair-brands__showbtn-img-container"></span>
+            <span class="repair-brands__showbtn-text">Показать все</span>
+         </button>
       </section>
 
       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
       <script src="scripts/swiper.js"></script>
+      <script src="scripts/show-all-btn.js"></script>
    </body>
 </html>

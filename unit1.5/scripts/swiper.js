@@ -1,6 +1,6 @@
 {
    let isMobileDevice = window.matchMedia(
-      "(max-width: 724px) and (min-resolution: 190dpi)"
+      "(max-width: 767.9px)"
    ).matches;
 
    if (isMobileDevice) {
@@ -19,8 +19,9 @@
    }
 }
 
-// "only screen and (max-width: 760px)"
 
-// if (typeof screen.orientation == 'undefined') {
-//    document.querySelector('.swiper-wrapper').classList.remove('swiper-wrapper');
-// }
+
+
+
+// "(max-width: 767.9px) and (min-resolution: 190dpi)"
+

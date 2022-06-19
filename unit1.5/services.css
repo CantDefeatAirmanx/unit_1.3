@@ -1,4 +1,6 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
@@ -6,7 +8,6 @@
 
 .body-content {
    font-family: "TT Lakes", sans-serif;
-   
 }
 
 .button {
@@ -19,19 +20,44 @@
    cursor: pointer;
 }
 
-
 .body-content__repair-brands {
-   margin-left: 1rem;
+   margin-left: 16px;
 }
 
+.repair-brands {
+   max-width: 1120px;
+}
+
+@media (min-width: 768px) {
+   .body-content__repair-brands {
+      margin-left: 24px;
+   }
+}
 
 .repair-brands__heading {
    font-size: 1rem;
    font-weight: 300;
-   color: #7E7E82;
+   color: #7e7e82;
    text-transform: uppercase;
    margin-bottom: 2rem;
    margin-top: 1rem;
+}
+
+/* brands list */
+
+.repair-brands__list {
+   display: flex;
+   gap: 16px;
+   overflow: hidden;
+   
+}
+
+.repair-brands__list--closed {
+   height: 160px;
+}
+
+.repair-brands__list--opened {
+   height: 100%;
 }
 
 
@@ -42,10 +68,31 @@
    padding: 16px;
    height: 72px;
    width: 240px;
-   border: 1px solid #EAEAEA;
+   border: 1px solid #eaeaea;
    border-radius: 6px;
 }
 
+.repair-brands__list-item--hidden {
+   display: none;
+}
+
+.repair-brands__list-item:not(.repair-brands__list-item:last-of-type) {
+   
+}
+
+@media (min-width: 768px) {
+   .repair-brands__list {
+      flex-wrap: wrap;
+      column-gap: 24px;
+   }
+   .repair-brands__list-item {
+      width: 224px;
+   }
+   .repair-brands__list-item--hidden {
+      display: flex;
+   }
+}
+/* swipper rules */
 
 .swiper-pagination {
    position: static;
@@ -60,16 +107,10 @@
 }
 
 .swiper-pagination-bullet-active {
-   background-color: #B5B6BC;
+   background-color: #b5b6bc;
 }
 
-.repair-brands__list-item--hidden {
-   display: none;
-}
-
-.repair-brands__list-item:not(.repair-brands__list-item:last-of-type) {
-   margin-right: 16px;
-}
+/* go-button */
 
 .go-button {
    transition: 0.3s ease;
@@ -79,7 +120,32 @@
    transform: scale(1.2);
 }
 
-
 .go-button__img-container {
    content: url(../images/icons/go.svg);
+}
+
+/* show btn */
+
+.repair-brands__showbtn--hidden {
+   display: none;
+}
+
+.repair-brands__showbtn:hover {
+   color: #41F6D7;
+}
+
+.repair-brands__showbtn-img-container {
+   content: url(../images/icons/icon.svg);
+}
+
+.repair-brands__showbtn-text {
+   margin-left: 16px;
+}
+
+
+
+@media (min-width: 768px) {
+   .repair-brands__showbtn--hidden {
+      display: block;
+   }
 }
