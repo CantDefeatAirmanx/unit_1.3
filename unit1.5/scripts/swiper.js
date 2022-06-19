@@ -1,6 +1,6 @@
 {
    let isMobileDevice = window.matchMedia(
-      "(max-width: 767.9px)"
+      "(max-width: 767.9px) and (min-resolution: 190dpi)"
    ).matches;
 
    if (isMobileDevice) {

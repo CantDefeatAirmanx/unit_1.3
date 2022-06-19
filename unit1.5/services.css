@@ -40,6 +40,13 @@
    }
 }
 
+@media (min-width: 1220px) {
+   .body-content__repair-brands {
+      margin-left: auto;
+      margin-right: auto;
+   }
+}
+
 .repair-brands__heading {
    font-size: 1rem;
    font-weight: 300;
@@ -57,14 +64,12 @@
    overflow: hidden;
 }
 
-.repair-brands__list--closed {
-   height: 160px;
-}
 
-.repair-brands__list--opened {
-   height: 100%;
+@media (max-width: 767px) and (max-resolution: 170dpi) {
+   .repair-brands__list {
+      overflow: scroll;
+   }
 }
-
 
 .repair-brands__list-item {
    display: flex;
@@ -81,9 +86,7 @@
    display: none;
 }
 
-.repair-brands__list-item:not(.repair-brands__list-item:last-of-type) {
-   
-}
+
 
 @media (min-width: 768px) {
    .repair-brands__list {
@@ -95,6 +98,14 @@
    }
    .repair-brands__list-item--hidden {
       display: flex;
+   }
+
+   .repair-brands__list--closed {
+      height: 160px;
+   }
+
+   .repair-brands__list--opened {
+      height: 100%;
    }
 }
 
@@ -156,7 +167,6 @@
 .repair-brands__showbtn-text {
    margin-left: 16px;
 }
-
 
 
 @media (min-width: 768px) {

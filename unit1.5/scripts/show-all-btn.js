@@ -1,7 +1,7 @@
 {
-   let brandsList = document.querySelector(".repair-brands__list");
-   let listHandlerBtn = document.querySelector(".repair-brands__showbtn");
-   let listHandlerBtnText = listHandlerBtn.querySelector('.repair-brands__showbtn-text');
+   const brandsList = document.querySelector(".repair-brands__list");
+   const listHandlerBtn = document.querySelector(".repair-brands__showbtn");
+   const listHandlerBtnText = listHandlerBtn.querySelector('.repair-brands__showbtn-text');
 
    listHandlerBtn.addEventListener("click", function () {
       if (brandsList.classList.contains("repair-brands__list--opened")) {
