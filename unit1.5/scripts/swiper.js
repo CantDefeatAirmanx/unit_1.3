@@ -4,7 +4,7 @@
    ).matches;
 
    let isIphone = window.matchMedia(
-      "(max-width: 767.9px) and (-webkit-min-device-pixel-ration: 2)"
+      "(max-width: 767.9px) and (-webkit-min-device-pixel-ration: 2), (max-width: 767.9px) and (min-device-pixel-ration: 2)"
    ).matches;
 
    if (isMobileDevice || isIphone) {
@@ -23,9 +23,4 @@
    }
 }
 
-
-
-
-
 // "(max-width: 767.9px) and (min-resolution: 190dpi)"
-
