@@ -60,8 +60,6 @@
 
 .repair-brands__list {
    display: flex;
-   gap: 16px;
-   overflow: hidden;
 }
 
 
@@ -82,6 +80,10 @@
    border-radius: 6px;
 }
 
+.repair-brands__list-item:not(.repair-brands__list-item:last-of-type) {
+   margin-right: 16px;
+}
+
 .repair-brands__list-item--hidden {
    display: none;
 }
@@ -91,10 +93,17 @@
 @media (min-width: 768px) {
    .repair-brands__list {
       flex-wrap: wrap;
+      gap: 16px;
       column-gap: 24px;
    }
+
+   .repair-brands__list-item:not(.repair-brands__list-item:last-of-type) {
+      margin-right: 0;
+   }
+
    .repair-brands__list-item {
       width: 224px;
+      margin-right: 0;
    }
    .repair-brands__list-item--hidden {
       display: flex;
