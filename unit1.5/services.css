@@ -63,7 +63,7 @@
 }
 
 
-@media (max-width: 767px) and (max-resolution: 139dpi) {
+@media (max-width: 767px) and (max-resolution: 149dpi) {
    .repair-brands__list {
       overflow: scroll;
    }
