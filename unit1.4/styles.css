@@ -23,7 +23,7 @@
 }
 
 @media (min-width: 768px) {
-   .burger-menu {height: 1024px;}
+   .burger-menu {height: 900px}
 }
 
 .link {
@@ -133,13 +133,21 @@
    position: absolute;
    left: 0;
    height: 32px;
-   top: -5px;
+   top: 0;
 }
 
 .burger-menu__nav-link:hover:not(.burger-menu__nav-link--active) {
    color: #41f6d7;
-   font-size: 1.2rem;
+   font-size: 1.15rem;
    text-decoration: underline;
+}
+
+.burger-menu__nav-link:hover:not(.burger-menu__nav-link--active)::before {
+   content: url(../images/icons/highlight.svg);
+   position: absolute;
+   left: 0;
+   height: 32px;
+   top: 0;
 }
 
 
